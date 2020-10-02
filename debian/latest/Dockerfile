@@ -1,7 +1,7 @@
 # vim:set ft=dockerfile:
 FROM debian:buster-slim
 
-LABEL maintainer="Andrius Kairiukstis <k@andrius.mobi>"
+LABEL maintainer="Geolffey Mena <gmjun2000@gmail.com>"
 
 ENV ASTERISK_VERSION 17-current
 ENV OPUS_CODEC       asterisk-17.0/x86-64/codec_opus-17.0_current-x86_64
