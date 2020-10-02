@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  2224-asterisk:
+    image: 2224/asterisk:v0.0.0
+    container_name: 2224-asterisk
+    restart: unless-stopped
+    environment:
+      - ASTERISK_USER=root
+    volumes:
+      - ./conf:/etc/asterisk/
+    ports:
+      - "5060:5060/tcp"
+      - "5060:5060/udp"

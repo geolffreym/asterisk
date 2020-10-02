@@ -18,6 +18,7 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends --no-i
     ca-certificates \
     curl \
     file \
+    vim \
     libcurl4-openssl-dev \
     libedit-dev \
     libgsm1-dev \
@@ -109,7 +110,9 @@ mkdir -p /etc/asterisk/ \
 chown -R asterisk:asterisk /etc/asterisk \
                            /var/*/asterisk \
                            /usr/*/asterisk
+
 chmod -R 750 /var/spool/asterisk
+chown asterisk.asterisk /var/log/asterisk/
 
 cd /
 rm -rf /usr/src/asterisk \
